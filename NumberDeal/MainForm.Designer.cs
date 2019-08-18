@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.timer_Refresh = new System.Windows.Forms.Timer(this.components);
             this.label_DateTime = new System.Windows.Forms.Label();
             this.groupBox_ = new System.Windows.Forms.GroupBox();
@@ -40,23 +40,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel_Edit = new System.Windows.Forms.Panel();
             this.panel_Top = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.功能ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.多线程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView_Data = new System.Windows.Forms.DataGridView();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage_Table = new System.Windows.Forms.TabPage();
             this.tabPage_Chart = new System.Windows.Forms.TabPage();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.功能ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.多线程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.桌面任务栏窗体ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox_.SuspendLayout();
             this.panel_Edit.SuspendLayout();
             this.panel_Top.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Data)).BeginInit();
             this.tabControl.SuspendLayout();
             this.tabPage_Table.SuspendLayout();
             this.tabPage_Chart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_DateTime
@@ -126,6 +127,32 @@
             this.panel_Top.Size = new System.Drawing.Size(779, 31);
             this.panel_Top.TabIndex = 2;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.功能ToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(779, 25);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // 功能ToolStripMenuItem
+            // 
+            this.功能ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.多线程ToolStripMenuItem,
+            this.桌面任务栏窗体ToolStripMenuItem});
+            this.功能ToolStripMenuItem.Name = "功能ToolStripMenuItem";
+            this.功能ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
+            this.功能ToolStripMenuItem.Text = "功能";
+            // 
+            // 多线程ToolStripMenuItem
+            // 
+            this.多线程ToolStripMenuItem.Name = "多线程ToolStripMenuItem";
+            this.多线程ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.多线程ToolStripMenuItem.Text = "多线程";
+            this.多线程ToolStripMenuItem.Click += new System.EventHandler(this.多线程ToolStripMenuItem_Click);
+            // 
             // dataGridView_Data
             // 
             this.dataGridView_Data.AllowUserToAddRows = false;
@@ -173,45 +200,27 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea_main";
-            this.chart1.ChartAreas.Add(chartArea1);
+            chartArea3.Name = "ChartArea_main";
+            this.chart1.ChartAreas.Add(chartArea3);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(3, 3);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea_main";
-            series1.Legend = "Legend1";
-            series1.Name = "Series_main";
-            this.chart1.Series.Add(series1);
+            series3.ChartArea = "ChartArea_main";
+            series3.Legend = "Legend1";
+            series3.Name = "Series_main";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(765, 234);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
-            // menuStrip1
+            // 桌面任务栏窗体ToolStripMenuItem
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.功能ToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(779, 25);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // 功能ToolStripMenuItem
-            // 
-            this.功能ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.多线程ToolStripMenuItem});
-            this.功能ToolStripMenuItem.Name = "功能ToolStripMenuItem";
-            this.功能ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
-            this.功能ToolStripMenuItem.Text = "功能";
-            // 
-            // 多线程ToolStripMenuItem
-            // 
-            this.多线程ToolStripMenuItem.Name = "多线程ToolStripMenuItem";
-            this.多线程ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.多线程ToolStripMenuItem.Text = "多线程";
-            this.多线程ToolStripMenuItem.Click += new System.EventHandler(this.多线程ToolStripMenuItem_Click);
+            this.桌面任务栏窗体ToolStripMenuItem.Name = "桌面任务栏窗体ToolStripMenuItem";
+            this.桌面任务栏窗体ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.桌面任务栏窗体ToolStripMenuItem.Text = "桌面任务栏窗体";
+            this.桌面任务栏窗体ToolStripMenuItem.Click += new System.EventHandler(this.桌面任务栏窗体ToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -225,18 +234,19 @@
             this.Name = "MainForm";
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.主窗体关闭);
+            this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.groupBox_.ResumeLayout(false);
             this.groupBox_.PerformLayout();
             this.panel_Edit.ResumeLayout(false);
             this.panel_Top.ResumeLayout(false);
             this.panel_Top.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Data)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.tabPage_Table.ResumeLayout(false);
             this.tabPage_Chart.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -259,6 +269,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 功能ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 多线程ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 桌面任务栏窗体ToolStripMenuItem;
     }
 }
 

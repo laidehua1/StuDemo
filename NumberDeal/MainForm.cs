@@ -75,7 +75,9 @@ namespace NumberDeal
             {
                 return _CurRowNo++;
             }
-        } 
+        }
+
+        private TaskForm _TaskForm;
         #endregion
 
         public MainForm()
@@ -180,7 +182,30 @@ namespace NumberDeal
         private void Form_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+            if (_TaskForm != null)
+                _TaskForm.Close();
             //this.TopMost = true;
+        }
+
+        private void 桌面任务栏窗体ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (_TaskForm != null) { _TaskForm.Show(); }
+            else
+            {
+                _TaskForm = new TaskForm();
+                _TaskForm.FormClosed += Form_FormClosed;
+                _TaskForm.Show();
+            }
+        }
+
+        private void MainForm_Shown(object sender, EventArgs e)
+        {
+            if (_TaskForm == null)
+            {
+                _TaskForm = new TaskForm();
+                _TaskForm.FormClosed += Form_FormClosed;
+                _TaskForm.Show();
+            }
         }
     }
 }

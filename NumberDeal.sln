@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberDeal", "NumberDeal\Nu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreadTest", "TreadTest\TreadTest.csproj", "{A6827BE0-500C-4081-927F-D90FF8CE46EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadFileForThread", "LoadFileForThread\LoadFileForThread.csproj", "{DAC8C2C7-71CB-4FA4-9BEF-C2B1F1B45943}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A6827BE0-500C-4081-927F-D90FF8CE46EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6827BE0-500C-4081-927F-D90FF8CE46EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6827BE0-500C-4081-927F-D90FF8CE46EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAC8C2C7-71CB-4FA4-9BEF-C2B1F1B45943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC8C2C7-71CB-4FA4-9BEF-C2B1F1B45943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC8C2C7-71CB-4FA4-9BEF-C2B1F1B45943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC8C2C7-71CB-4FA4-9BEF-C2B1F1B45943}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
